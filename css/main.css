@@ -408,3 +408,25 @@ header {
 }
 
 
+
+
+
+
+/* Minimal custom CSS to enable hover functionality and close on hover off */
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item.dropdown:hover .dropdown-menu:hover {
+  display: block;
+}
+
+
