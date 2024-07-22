@@ -1,0 +1,84 @@
+{
+    "imageAvatar": "images/reference-image-2.jpg",
+    "intro": {
+        "name": "Kumar Aditya",
+        "role": "DevOps Systems Engineer"
+    },
+    "aboutMe": "Hello! I’m Walter Patterson. I am passionate about UI/UX design and Web Design. I am a skilled front-end developer and master of graphic design tools such as Photoshop and Sketch. I am a quick learner and a team worker that gets the job done. I can easily capitalize on low hanging fruits and quickly maximize timely deliverables for real-time schemas.",
+    "bio": {
+        "Work Experience": "11 years",
+        "Email": "walter@company.com",
+        "Slack": "username@skype.com",
+        "Phone": "+0718-111-0011",
+        "Address": "Ontario, Canada"
+    },
+    "professionalSkills": {
+        "Platforms": [
+            "Linux (RHEL 7/8, CentOS 7/8, Ubuntu), Windows Server/Client OS"
+        ],
+        "Source Control": [
+            "Git, Bitbucket, Gitlab, Github"
+        ],
+        "Build Tools": [
+            "Ant, Maven"
+        ],
+        "Build Tools1": [
+            "Ant, Maven"
+        ],
+        "Build Tools2": [
+            "Ant, Maven"
+        ]
+    },
+    "workExperience": [
+        {
+            "title": "Frontend Developer",
+            "company": "Creative Agency",
+            "date": "May, 2015 - Present",
+            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        },
+        {
+            "title": "Graphic Designer",
+            "company": "Design Studio",
+            "date": "June, 2013 - May, 2015",
+            "description": "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line."
+        },
+        {
+            "title": "Junior Web Developer",
+            "company": "Indie Studio",
+            "date": "Jan, 2011 - May, 2013",
+            "description": "User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+        }
+    ],
+    "education": [
+        {
+            "degree": "Masters in Information Technology",
+            "university": "International University",
+            "date": "2011 - 2013",
+            "description": "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition."
+        },
+        {
+            "degree": "Bachelor of Computer Science",
+            "university": "Regional College",
+            "date": "2007 - 2011",
+            "description": "Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line."
+        },
+        {
+            "degree": "Science and Mathematics",
+            "school": "Mt. High School",
+            "date": "1995 - 2007",
+            "description": "User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment."
+        }
+    ],
+    "footerAddress": {
+        "Address": "528-31 Tretti Way, North York, Ontario M3H 0E3",
+        "Phone": "+1 437 602 9840",
+        "Email": "example@gmail.com"
+    },
+    "footerNavLink":{
+        "twitter":"https://twitter.com",
+        "facebook":"https://www.facebook.com",
+        "instagram":"https://www.linkedin.com/in/kadityasharma/",
+        "githib":"https://github.com/adityasharma1011"
+    },
+    "formLink":"https://formspree.io/f/meojqpkp1"
+}

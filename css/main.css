@@ -1,0 +1,410 @@
+/* Timeline custom component */
+
+:root {
+  scroll-padding-top: 70px;
+  /* Height of your fixed navbar */
+}
+
+
+:root {
+  scroll-padding-top: 70px;
+  /* Height of your fixed navbar */
+}
+
+.timeline-card {
+  position: relative;
+  margin-left: 16px;
+}
+
+.timeline-card:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  left: -12px;
+  border: 5px solid;
+  z-index: 2;
+}
+
+.timeline-body {
+  border-left: 2px solid #E6E9ED;
+}
+
+.timeline-card-primary:before {
+  border-color: var(--bs-primary);
+}
+
+.timeline-card-info:before {
+  border-color: var(--bs-info);
+}
+
+.timeline-card-secondary:before {
+  border-color: var(--bs-secondary);
+}
+
+.timeline-card-success:before {
+  border-color: var(--bs-teal);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.site-title {
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.nav-link {
+  padding: 0;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.header-social .nav-link {
+  font-size: 1.25rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: inherit;
+  opacity: 1;
+}
+
+.nav-item+.nav-item {
+  margin-left: 1rem;
+}
+
+.cover {
+  height: 500px;
+}
+
+.cover>img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: auto;
+}
+
+
+.bg-light {
+  background-color: white !important;
+  border-color: grey;
+  border-width: 1
+}
+
+
+.progress-bar {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.text-teal {
+  color: var(--bs-teal);
+}
+
+footer a:not(.nav-link) {
+  color: inherit;
+  border-bottom: 1px dashed;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .site-title {
+    float: left;
+  }
+
+  .site-nav {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* disable animations on mobile */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+
+  .p-5 {
+    padding: 2.5rem 2rem !important;
+  }
+
+  .portfolio-section .m-5 {
+    margin: 2rem 0 1rem !important;
+  }
+
+  .portfolio-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .portfolio-reverse .text-end {
+    text-align: start !important;
+  }
+}
+
+@media print {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+
+  body.bg-light {
+    background-color: #fff !important;
+  }
+
+  .container {
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .cover {
+    height: 360px;
+    margin-bottom: 1.5rem;
+  }
+
+  .cover>img {
+    display: none;
+  }
+
+  .shadow-1-strong {
+    box-shadow: none !important;
+  }
+
+  .resume-container>.my-5 {
+    margin: 0 !important;
+  }
+
+  .my-5.p-5 {
+    padding-top: 1.5rem 0 !important;
+
+  }
+
+  .about-section {
+    padding: 0 !important;
+  }
+
+  .skills-section,
+  .work-experience-section,
+  .education-section,
+  .portfolio-section,
+  .reference-section,
+  .contact-section {
+    padding: 0 !important;
+  }
+
+  .page-break {
+    padding-top: rem;
+    page-break-before: always;
+  }
+
+}
+
+
+.input-group .input-group-prepend .input-group-text {
+  width: 40px;
+  justify-content: center;
+  border: #ffffff00;
+}
+
+.input-group .form-control {
+  height: 100%;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+  border-radius: 0.25rem;
+}
+
+.form-group .input-group-text {
+  align-items: flex-start;
+}
+
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+header {
+  background-color: white;
+  /* Set header background to white */
+  padding: 10px 0;
+  /* Add padding to header content */
+}
+
+.page-content {
+  padding-top: 15px;
+  /* Adjust padding to match height of fixed navbar */
+  /* width: 80%;
+  margin: auto; */
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: black;
+  background-image: url('../images/navbar_icon.jpg');
+  /* Set your image path */
+  background-size: cover;
+  /* Ensure the image covers the button */
+  width: 30px;
+  /* Set width of the button */
+  height: 30px;
+  /* Set height of the button */
+}
+
+.navbar-toggler-icon {
+  display: none;
+  /* Hide default Bootstrap icon */
+}
+
+.navbar-nav {
+  margin-left: auto;
+  /* Align navbar items to the right */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 10px;
+  /* Adjust spacing between navbar items */
+}
+
+.navbar {
+  background-color: black;
+}
+
+
+.skills-table {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.skills-table td {
+  padding: 8px;
+  border-right: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.skills-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.skills-table td:first-child {
+  width: 25%;
+}
+
+.skills-table td:last-child {
+  width: 75%;
+}
+
+.skills-table ul {
+  list-style-type: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skills-table tr:last-child td {
+  border-bottom: none;
+}
+
+.skills-table td:last-child {
+  border-right: none;
+}
+
+/* Custom dropdown styles */
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #444;
+  color: white;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  background-color: black;
+  display: none;
+}
+
+.dropdown-submenu-left .dropdown-menu {
+  left: auto;
+  right: 100%;
+  top: 0;
+  /* Align the top of the sub-dropdown with the parent */
+}
+
+/*nav bar dropdown on left*/
+
+
+/* Base styles for dropdowns */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 0;
+  left: -100%; /* Align to the left */
+  margin-top: -1px; /* Adjust if needed */
+}
+
+/* Show dropdown on hover for desktop */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Align dropdown menu to the right on mobile view */
+@media (max-width: 991.98px) {
+  .dropdown-submenu .dropdown-menu {
+    left: 100%; /* Align to the right on mobile */
+  }
+}
+
+
