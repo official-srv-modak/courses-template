@@ -430,3 +430,56 @@ header {
 }
 
 
+
+
+
+
+
+/* side bar */
+
+
+.sidebar {
+  display: flex;
+}
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 60px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  width: 10%;
+  background-color: black;
+  color: white;
+}
+.sidebar-nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-left: 10%;
+}
+
+.sidebar-nav a:hover {
+  color: #ababab;
+}
+.sidebar-nav a.active {
+  background-color: #ffffff;
+  color: white;
+}
+.content {
+  margin-left: 200px;
+  padding: 20px;
+  width: 100%;
+}
+.section {
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+
+
+
+#top{
+  margin-left: 10%;
+}

@@ -30,6 +30,44 @@
   </noscript>
 </head>
 
+
+<div class="sidebar">
+  <nav id="sidebar-nav" class="sidebar-nav">
+    <a href="#python-basic">Python Basics</a>
+    <a href="#python-scrapy">Python Scrapy</a>
+    <a href="#python-flask">Python Flask</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+      const sections = document.querySelectorAll('.section');
+
+      function onScroll() {
+        const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+
+          if (scrollPosition >= sectionTop - 60 && scrollPosition < sectionTop + sectionHeight - 60) {
+            const id = section.getAttribute('id');
+            sidebarLinks.forEach(link => {
+              link.classList.remove('active');
+              if (link.getAttribute('href') === `#${id}`) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      }
+
+      document.addEventListener('scroll', onScroll);
+    });
+  </script>
+</div>
+
 <body class="bg-light" id="top">
 
   <header>
