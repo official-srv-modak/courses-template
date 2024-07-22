@@ -450,7 +450,7 @@ header {
   background-color: #f8f9fa;
   border-right: 1px solid #dee2e6;
   width: 10%;
-  background-color: black;
+  background-color: rgb(31, 31, 31);
   color: white;
 }
 .sidebar-nav a {
@@ -464,10 +464,7 @@ header {
 .sidebar-nav a:hover {
   color: #ababab;
 }
-.sidebar-nav a.active {
-  background-color: #7d7c7c;
-  color: black;
-}
+/* */
 .content {
   margin-left: 200px;
   padding: 20px;
