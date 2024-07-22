@@ -465,8 +465,8 @@ header {
   color: #ababab;
 }
 .sidebar-nav a.active {
-  background-color: #ffffff;
-  color: white;
+  background-color: #7d7c7c;
+  color: black;
 }
 .content {
   margin-left: 200px;
