@@ -346,6 +346,71 @@ header {
   border-right: none;
 }
 
+
+/* Sidebar */
+.sidebar {
+  display: flex;
+}
+
+.sidebar.collapsed .sidebar-nav {
+  width: 0;
+  overflow: hidden;
+}
+
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 60px;
+  background-color: #f8f9fa;
+  width: 10%;
+  background-color:#2c2c2c;
+  color: white;
+  transition: width 0.3s;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar-nav a:hover {
+  color: #ababab;
+}
+
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 10%;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: left 0.3s;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+    left: 10px;
+  }
+
+  .sidebar-nav {
+    width: 70%;
+    height: auto;
+    position: fixed;
+  }
+
+  .sidebar.collapsed .sidebar-nav {
+    display: none;
+  }
+}
+
 /* Custom dropdown styles */
 .dropdown-menu {
   background-color: black;
@@ -381,18 +446,20 @@ header {
 
 /*nav bar dropdown on left*/
 
-
 /* Base styles for dropdowns */
 .dropdown-submenu {
   position: relative;
 }
 
 .dropdown-submenu .dropdown-menu {
-  display: none; /* Hide by default */
+  display: none;
+  /* Hide by default */
   position: absolute;
   top: 0;
-  left: -100%; /* Align to the left */
-  margin-top: -1px; /* Adjust if needed */
+  left: -100%;
+  /* Align to the left */
+  margin-top: -1px;
+  /* Adjust if needed */
 }
 
 /* Show dropdown on hover for desktop */
@@ -403,21 +470,17 @@ header {
 /* Align dropdown menu to the right on mobile view */
 @media (max-width: 991.98px) {
   .dropdown-submenu .dropdown-menu {
-    left: 100%; /* Align to the right on mobile */
+    left: 100%;
+    /* Align to the right on mobile */
   }
 }
 
-
-
-
-
-
 /* Minimal custom CSS to enable hover functionality and close on hover off */
-.nav-item.dropdown:hover > .dropdown-menu {
+.nav-item.dropdown:hover>.dropdown-menu {
   display: block;
 }
 
-.dropdown-submenu:hover > .dropdown-menu {
+.dropdown-submenu:hover>.dropdown-menu {
   display: block;
 }
 
@@ -431,45 +494,13 @@ header {
 
 
 
-
-
-
-
-/* side bar */
-
-
-.sidebar {
-  display: flex;
-}
-.sidebar-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding-top: 60px;
-  background-color: #f8f9fa;
-  border-right: 1px solid #dee2e6;
-  width: 10%;
-  background-color: rgb(31, 31, 31);
-  color: white;
-}
-.sidebar-nav a {
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #ffffff;
-  margin-left: 10%;
-}
-
-.sidebar-nav a:hover {
-  color: #ababab;
-}
-/* */
+/* with sidebar */
 .content {
   margin-left: 200px;
   padding: 20px;
   width: 100%;
 }
+
 .section {
   padding-top: 60px;
   margin-bottom: 60px;
@@ -477,6 +508,93 @@ header {
 
 
 
-#top{
-  margin-left: 10%;
+
+
+
+
+
+
+
+body {
+  padding-top: 56px; /* Adjust this value if your navbar height changes */
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10%; /* Sidebar width for larger screens */
+  z-index: 1;
+  background-color: #2c2c2c;
+  color: white;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  padding: 0;
+}
+
+/* Adjust width for smaller screens */
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 40%;
+  }
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.sidebar-nav {
+  margin-top: 60px; /* Adjust for fixed header */
+  padding: 0; /* Ensure no padding around links */
+}
+
+/* Ensure the sidebar is always visible on large screens */
+@media (min-width: 992px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+
+  .navbar-toggler.sidebar-toggle {
+    display: none; /* Hide sidebar toggle button on larger screens */
+  }
+}
+
+.sidebar-nav a:hover {
+  color: #ababab;
+}
+
+.navbar-toggler.sidebar-toggle {
+  border: none;
+  color: white;
+}
+
+.navbar-brand {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Apply margin only on larger screens */
+@media (min-width: 992px) {
+  #top {
+    margin-left: 10%;
+  }
+}
+
+/* Remove margin on smaller screens (mobile) */
+@media (max-width: 991.98px) {
+  #top {
+    margin-left: 0;
+  }
+}
+
+
+.sidebar-nav a {
+  margin: auto;
+  text-decoration: none;
+  color: #ffffff;
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any box-shadow */
+  width: 1500%; /* Make links stretch to full width */
+  size: 20em;
 }
